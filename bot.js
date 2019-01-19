@@ -248,4 +248,4 @@ client.on('guildMemberRemove', member => {
 
 
 
-client.login('NTM1OTQyMDQwNjA1ODE4ODgx.DyPjbg.bT8ENwxRMSne8FLcgJESvplqtRE');
+client.login('NTM1OTQyMDQwNjA1ODE4ODgx.DyTHow.pyW_5jVVipcZPzCJFtoULo0d2z4');
