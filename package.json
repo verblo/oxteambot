@@ -4,6 +4,7 @@
   "description": "OXTEAMBOT.",
   "main": "bot.js",
   "author": "Dominik VeeQ Zatorski",
+  "start": "node bot.js",
   "dependencies": {
     "discord.js": "^11.4.2",
     "weather-js": "^2.0.0"
@@ -15,4 +16,3 @@
   "keywords": [],
   "license": "ISC"
 },
-  "start": "node bot.js"
