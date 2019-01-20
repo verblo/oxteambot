@@ -15,7 +15,7 @@ client.on("ready", () => {
 
 
 client.on('message', msg => {
-  if (msg.content === '!ping') {
+  if (msg.content === 'ping') {
     msg.reply('Pong!');
   }
 })
@@ -70,8 +70,8 @@ receivedMessage.channel.send("Co znowuuu " + receivedMessage.author.toString() +
 
 
 client.on('ready', () => {
-    // Set bot status to: "Playing with JavaScript"
-    client.user.setActivity("Hawajczyk Szuka Mozgu! UKRYTA KAMERA", {type: "WATCHING"})
+
+    client.user.setActivity("Rexel Szuka Mozgu! UKRYTA KAMERA", {type: "WATCHING"})
 
     // PLAYING, STREAMING, LISTENING, WATCHING
     // Przykład:
@@ -123,7 +123,7 @@ function helpCommand(arguments, receivedMessage) {
 
 function multiplyCommand(arguments, receivedMessage) {
     if (arguments.length < 2) {
-        receivedMessage.channel.send("Not enough values to multiply. Try `!multiply 2 4 10` or `!multiply 5.2 7`")
+        receivedMessage.channel.send("`Ta komenda jest w trakcie realizacji.`")
         return
     }
     let product = 1 
@@ -240,12 +240,60 @@ client.on('guildMemberRemove', member => {
 
 
 
+client.on("message", (message) => {
+  if(message.content === "ayy") {
+    message.channel.send("Ayy, lmao!");
+  }
+  if(message.content === "wat") {
+    message.channel.send("Say whaaaat?");
+  }
+  if(message.content === "lol") {
+    message.channel.send("roflmao");
+  }
+    if(message.content === "owly") {
+    message.channel.send("Owly zaśpiewa ci piosenke.");
+  }
+    if(message.content === "veeq") {
+    message.channel.send("VeeQ? VeeQ? co VeeQ?");
+  }
+    if(message.content === "xd") {
+    message.channel.send("Ponosi Cię melanż?");
+  }
+      if(message.content === "haha") {
+    message.channel.send("Ale.. Zachowujmy sie poważnie.. panowie.");
+  }
+      if(message.content === "czesc") {
+    message.channel.send("** OX Puszcza bąka. **");
+  }
+      if(message.content === "** OX Puszcza bąka. **") {
+    message.channel.send("Czujecie? Pachnie jak problem");
+  }
+        if(message.content === "masno") {
+    message.channel.send("Masno ni");
+  }
+          if(message.content === "trening") {
+    message.channel.send("Nwm");
+  }
+            if(message.content === "kiedy trening") {
+    message.channel.send("Nwm");
+  }
+            if(message.content === "kiedy trening?") {
+    message.channel.send("Nwm");
+  }
+});
 
 
+const http = require('http');
+const express = require('express');
+const app = express();
+app.get("/", (request, response) => {
+  console.log(Date.now() + " Ping Received");
+  response.sendStatus(200);
+});
+app.listen(process.env.PORT);
+setInterval(() => {
+  http.get(`http://${process.env.PROJECT_DOMAIN}.glitch.me/`);
+}, 280000);
 
 
-
-
-
-
-client.login('NTM1OTQyMDQwNjA1ODE4ODgx.DyTHow.pyW_5jVVipcZPzCJFtoULo0d2z4');
+client.login('NTM1OTQyMDQwNjA1ODE4ODgx.DyXabQ.P-EKNVs_SMd0OkqJhjOQsSuoBuA');
