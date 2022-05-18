@@ -296,4 +296,4 @@ setInterval(() => {
 }, 280000);
 
 
-client.login('NTM1OTQyMDQwNjA1ODE4ODgx.DyXabQ.P-EKNVs_SMd0OkqJhjOQsSuoBuA');
+client.login('xxxxxxx');
