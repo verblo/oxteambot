@@ -1,2 +1,1 @@
-# oxteambot
-24/7 bot
+Bot stworzony na potrzeby OX TEAM w cs:go.
